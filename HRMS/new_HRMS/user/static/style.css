@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Pooppins:wght@300;400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input{
+  font-family: 'Poppins', sans-serif;
+}
+
+.container1{ 
+  width: 100%;
+  background-color: #fff;}
+
+.title{
+  font-size:  5.4rem;
+  color: #444;
+  margin-bottom: 10px;
+  
+}
+
+.input-field{
+  max-width: 380px;
+  width: 100%;
+  height: 55px;
+  background-color: #f0f0f0;
+  margin: 10px 0;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+/* icons */
+
+.input-field i{
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  font-size: 1.5rem;
+}
+
+.input-field input{
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.input-field input:placeholder-shown{
+  color: #aaa;
+  font-weight: 500;
+}
+
+.btn{
+  width: 150px;
+  height: 49px;
+  outline: none;
+  border: none;
+  border-radius: 48px;
+  background-color:  skyblue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: all 0.5s;
+}
+
+.btn:hover{
+  background-color: #00bfa6;
+}
+
+.social-text{
+  padding: 0.7rem 0;
+}
+.signin-signup{
+  position: absolute;
+  top: 50%;
+  left: 90%;
+}
+
+
+form .signup-form{
+  position: absolute;
+  top: 50%;
+  left:90%;
+  transform: translate(-50%, -50%);
+  display: grid;
+}
+
+.image{
+  /* width: 100%;
+  height: 100%;
+  border-radius: ; */
+  content: '';
+  position: absolute;
+  height: 1000px;
+  width: 1000px;
+  top: 20%;
+  right: 48%;
+  transform: translateY(-30%);
+  border-radius: 40%;
+  z-index: 6;
+
+}
+
+.left-panel{
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel{
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content{
+  color: #fff;
+}
+
+.panel h3{
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p{
+  font-size: 0.95rem;
+  padding: 00.7rem 0;
+}
+
+.btn.transparent{
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+
+}
+
+.right-panel .content,
+ right-panel .image{
+  transform: translateX(800px);
+}

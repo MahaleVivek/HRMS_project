@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+
+{% csrf_token %}
+{% block body %}
+
+<br>
+
+<div id="intro_paragraph">
+    <h3 align="center">Employee Details</h3>
+</div>
+
+<br>
+<div class="container">
+  <table class="table" id="dataTable">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Name</th>
+        <th>Role / Profile</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Action</th>
+      </tr>
+    <tbody>
+
+      {% for post in object_list %}
+
+        <tr>
+          <td>{{ post.employee_id}} </td>
+
+          <td>{{ post.first_name.capitalize }} {{ post.last_name.capitalize }}</td>
+
+          <td>{{ post.position.capitalize}}</td>
+
+          <td>{{ post.email}}</td>
+        
+          <td>{{post.contact}}</td>
+
+      {% endfor %}
+        <!-- </td> -->
+      </tr>
+
+    </tbody> 
+   </thead>
+  </table>
+
+</div>
+    
+
+{% endblock %}

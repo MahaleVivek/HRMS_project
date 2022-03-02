@@ -1,0 +1,76 @@
+
+.card{
+    margin-top: 146px;
+    width: 50%;
+    margin-left: 27%;
+    border: 1px solid black;
+    height: 105%;
+  }
+  .card-body{
+    margin-top: -180px;
+    height: 47px;
+    width: 75%;
+    font-size: 110%;
+  }
+  
+  input[type=text], input[type=password] {
+     
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+  .button {
+    background-color: #089cf1;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 221px;
+    /*height: 70px; */
+    border-radius: 30px;
+    /* font-size: 170%; */
+}
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* line-height: 110px; */
+    margin-top: 9rem;
+    /* border: 2px solid gray; */
+    margin-bottom: -100px;
+    margin-left: 20%;
+    padding: 22px;
+  }
+  
+  .image{
+    height: 200%;
+    width: 100%;
+    /* transform: translateY(-30%); */
+    z-index: 6;
+    border-radius: 0% 50% 50% 0%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+  } 
+
+  .left-panel{
+    padding: 3rem 17% 2rem 12%;
+  }
+  
+  .right-panel{
+    padding: 3rem 12% 2rem 17%;
+  }
+  
+  .panel .content{
+    color: #fff;
+  } 
+  

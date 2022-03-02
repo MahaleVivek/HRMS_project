@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJ0vgRr2a9jxxT1ely+B+xFAmJKVSTbpM/CuL7qx08w=="
+        crossorigin="anonymous"
+        />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        {%load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'temp.css' %}" />
+
+    </head>
+    <body style="position: fixed;background-color: skyblue;">
+
+        {% if message %}
+            <script>alert('{{ message }}')</script>
+        {% endif %}
+
+
+        {% comment %} <div class="card">
+            <div class="card-body">
+                <form action="{% url 'login' %}" method="post">
+                    <div class="container">
+                        
+                        <h3>Sign in</h3>
+            
+                        {% csrf_token %}
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <button type="submit" value="Login">Login</button>
+                        <div><input type="checkbox"> Remember me</div>
+            
+                        <a href=''>Forgot password ?</a>
+            
+                    </div>
+                </form>
+            </div>
+        </div> {% endcomment %}
+
+    <!--  vivek trial code -->
+    <div class="row">
+        <div class="col-6">
+              <img src="static/image/bg.jpg" alt="" class="image">
+            <!-- </div>
+          </div> -->
+        </div>
+
+        <div class="col-6">
+          <div class="card shadow-lg p-3 mb-5 bg-white rounded">
+            <div class="card-body">
+              <form action="{% url 'login' %}" method="post">
+                <div class="container">
+                  <i class="fa fa-user-circle-o" style="font-size:60px;color:black"></i>
+                  <h3>Sign in</h3>
+        
+                    {% csrf_token %}
+                    <input type="text" name="username" placeholder="Username">
+                    
+                    <input type="password" name="password" placeholder="Password">
+                    <button type="submit" value="Login" class="button">Login</button>
+                    <div><input type="checkbox"> Remember me</div>
+        
+                    <a href=''>Forgot password ?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div> <!-- row div-->
+
+    </body>
+    </html>
+
+<!-- username: vivek
+password: vivek123 -->

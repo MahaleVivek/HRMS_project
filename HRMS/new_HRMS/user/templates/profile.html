@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+
+{% csrf_token %}
+
+{% block body %}
+
+<div id="intro_paragraph">
+    <h3 align="center">My Profile</h3>
+</div>
+
+<form>
+    {% for post in object_list %}
+
+        <input type="text" value="{{ post.username.first_name }}">Name
+
+    {% endfor %}
+firstname, lastname, role, address, contact, email, is_employee, is_employer, 
+</form>
+
+{% endblock %}

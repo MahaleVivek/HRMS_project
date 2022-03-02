@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h2>Welcome, {{ request.user.username }}</h2>
+
+    <ul>
+        <li>Username: {{ request.user.username }}<li>
+        <li>Email: {{ request.user.email }}</li>
+    </ul>
+
+    <a href ="{% url 'logout' %}">Logout</a>
+    
+    <div>
+        <a href="{% url 'admin:index' %}">Go To Admin</a>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+input[type=text], input[type=password] {
+    width: 15%;
+    height: 30px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #089cf1;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* line-height: 110px; */
+    margin-top: 10rem;
+    /* border: 2px solid gray; */
+  }
+
+  .sign{
+    margin-left: 30%;
+  }
+  
